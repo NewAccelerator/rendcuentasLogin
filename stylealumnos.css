@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#container{
+	width: 100%;
+	height:auto; /* es para hacerlo responsivo */
+	border:solid 1px #999;
+	margin: auto;
+}
+
+#container h1{
+	font-family:verdana;
+	font-size:1.5em;
+	text-align: center;
+	color: rgb(226, 110, 43);
+}
+
+#container h2{
+	font-family:verdana;
+	font-size:1em;
+	text-align: center;
+	color:#bb1717ef;
+}
+
+header{
+	width:100%;
+	height:150px;
+	background: rgb(255, 115, 0);
+	padding-top:20px;
+	position: relative;
+}
+
+header nav{
+	width:100%;
+	height:auto;
+	background:red;
+	position:absolute;
+	bottom:0;
+}
+
+header nav ul li{
+	width:25%; /* Al ser 4 completa el 100%*/
+	background: #DC393C;
+	display:inline-block;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	display:block;
+	background: #000;
+	color:#fff;
+	text-align: center;
+	padding: 10px 0 10px 0; /*En este caso se tiene en cuenta que los margenes se van a tomar primero top, 2do Der, 3ero Abajo, 4t0 Izq*/
+	border-right: 1px solid #fff;
+	font-family: verdana;
+	font-size:1em;
+	transition: background 1s;
+}
+
+section{
+	width: auto;
+	height: auto;	/*550px;*/
+	background: #0e9461;
+}
+
+section p{
+	width: auto;
+	text-align: justify;
+	padding: 20px 30px 20px 30px;
+}
+
+/* Estilo a la línea*/
+hr {
+	border: dotted 1.5px #fff;
+}
+
+footer{
+	width: 100%;
+	height: 50px;
+	background: skyblue;
+}
+
+footer h6{
+	font-family:verdana;
+	font-size:0.7em;
+	text-align: center;
+	color:#3f6ac5;
+	line-height: 50px;
+}
+
+#pnosotros{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:1em;
+	color:#fff; /*Blanco*/
+	text-align:center;
+	margin-bottom:20px;
+}
+
+#contenido{
+	width:80%;
+	height:auto;
+	padding:15px;
+	/*border:solid 1px #000;*/
+	margin:auto;
+}
+
+.contiene{
+	width:95%;
+	height:auto;
+	background:#fff;
+	padding:10px;
+	margin-bottom:30px;
+	opacity:0.6;
+	transition:all 0.5s;
+}
+
+.contiene:hover{
+	transform:scale(1.1);
+	opacity:1;
+}
+
+.empresa{
+	width:150px;
+	height:150px;
+	border:1px solid grey;
+	box-shadow:0 0 10px rgba(0,0,0,0.25); /*desplazamiento sombra eje x, desplazamiento sombra eje y, proyeccion de la sombra, color*/
+}
+
+.pempresa{
+	font-family:verdana;
+	font-size:0.8em;
+	color:#999;
+	width:70%;
+}
+
+.empresa, .pempresa{
+	display:inline-block;
+	vertical-align:top;
+}
+
+.tempresa{
+	font-family:mistral!important;
+	font-size:1.2em!important;
+	color:#369!important;
+	text-align:left!important;
+	margin-bottom:20px;
+}
+
+/* Media Queries*/
+/* Esta es la pogramación de partes responsivas*/
+@media screen and (max-width:700px){
+	/*del menu superior que aparezcan 2 y 2*/
+	header nav ul li{
+		width: 50%;
+	}
+	header{
+		height: 150px;
+	}
+	section{
+		width: 100%;
+	}
+}
